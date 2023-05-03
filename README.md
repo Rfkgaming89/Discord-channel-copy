@@ -7,11 +7,11 @@ Installation
 
 Clone or download the project to your local machine.
 
-Install the required dependencies by running pip install -r requirements.txt in your terminal or command prompt.
+Install the required dependencies by running `pip install -r requirements.txt` in your terminal or command prompt.
 
 Open the config.py file and enter your bot token, the ID of the channel to copy from, and the ID of the channel to copy to.
 
-Run python bot.py to start the bot.
+Run `python bot.py` to start the bot.
 
 Usage
 
@@ -25,10 +25,4 @@ Contributing
 
 Feel free to contribute to this project by submitting issues, feature requests, or pull requests.
 
-License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-In this README file, I've included instructions on how to install and use the bot, as well as information on contributing and licensing. 
-
-You can modify this file to suit your specific needs and include any additional information that you think might be useful for your users.

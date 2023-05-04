@@ -18,7 +18,8 @@ async def on_message(message):
 
     if message.content.startswith(COPY_COMMAND):
         channel = client.get_channel(COPY_FROM_CHANNEL_ID)
-        async for msg in channel.history(limit=10):
-            await client.get_channel(COPY_TO_CHANNEL_ID).send(msg.content)
+        async for msg in reversed(channel.history(limit=-1)):
+            if msg.content != COPY_COMMAND:
+                await client.get_channel(COPY_TO_CHANNEL_ID).send(msg.content)
 
 client.run(TOKEN)
